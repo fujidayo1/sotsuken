@@ -1,0 +1,2085 @@
+This is e-pTeX, Version 3.14159265-p3.7-150805-2.6 (sjis) (TeX Live 2015/W32TeX) (preloaded format=platex 2015.11.21)  4 JAN 2018 10:13
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**doc.tex
+(./doc.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/10/01> patch level 2)
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+! Undefined control sequence.
+l.2 \section
+            {はじめに}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \section{は
+               じめに}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{robot2013_fujii}
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.6 ...fujii,kougaku2015_uchida,IEEJ2017_nagasaki}
+                                                  や企業での研修\cite{kougak...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `robot2013_fujii' on page  undefined on input line 6.
+
+\citation{kougaku2015_uchida}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.6 ...fujii,kougaku2015_uchida,IEEJ2017_nagasaki}
+                                                  や企業での研修\cite{kougak...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `kougaku2015_uchida' on page  undefined on input line 6
+.
+
+\citation{IEEJ2017_nagasaki}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.6 ...fujii,kougaku2015_uchida,IEEJ2017_nagasaki}
+                                                  や企業での研修\cite{kougak...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IEEJ2017_nagasaki' on page  undefined on input line 6.
+
+
+\citation{kougaku2016_tsuchikoi}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.6 ...}や企業での研修\cite{kougaku2016_tsuchikoi}
+                                                  に広く利用されている．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `kougaku2016_tsuchikoi' on page  undefined on input lin
+e 6.
+
+\citation{robot2013_fujii}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.12 ...,kougaku2015_uchida,kougaku2016_tsuchikoi}
+                                                  や
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `robot2013_fujii' on page  undefined on input line 12.
+
+\citation{kougaku2015_uchida}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.12 ...,kougaku2015_uchida,kougaku2016_tsuchikoi}
+                                                  や
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `kougaku2015_uchida' on page  undefined on input line 1
+2.
+
+\citation{kougaku2016_tsuchikoi}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.12 ...,kougaku2015_uchida,kougaku2016_tsuchikoi}
+                                                  や
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `kougaku2016_tsuchikoi' on page  undefined on input lin
+e 12.
+
+\citation{IEEJ2017_nagasaki}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.13 プログラミング教育\cite{IEEJ2017_nagasaki}
+                                               が実践されていることが多い．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IEEJ2017_nagasaki' on page  undefined on input line 13
+.
+
+
+Overfull \hbox (29.62216pt too wide) in paragraph at lines 2--14
+[][]\JY1/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 じ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 め
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 　
+ []
+
+
+Overfull \hbox (28.68062pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 LEGO
+ []
+
+
+Overfull \hbox (31.25005pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 MIND-
+ []
+
+
+Overfull \hbox (42.63898pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 STORMS
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (40.525pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 LEGO \JY1/mc/m/n/10 社
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 マ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 チ
+ []
+
+
+Overfull \hbox (17.0965pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ュ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ツ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 工
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 科
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (27.77783pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 (MIT)
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 共
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 同
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 開
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 発
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 教
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 育
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ボ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 玩
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 具
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 キ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (12.67767pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 り，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 小
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 校
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ら
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ま
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 多
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 く
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 教
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 育
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 機
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 関
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 授
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 業
+ []
+
+
+Overfull \hbox (10.9861pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 [[],
+ []
+
+
+Overfull \hbox (8.20831pt too wide) in paragraph at lines 2--14
+[]\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (8.20831pt too wide) in paragraph at lines 2--14
+[]\OT1/cmr/m/n/10 ]
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 や
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 企
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 業
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 研
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 修
+ []
+
+
+Overfull \hbox (10.9861pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 [[]]
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 広
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 く
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 利
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.65881pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 る ．
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 現
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 在
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 バ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ジ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ョ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (19.3056pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 EV3
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 第
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 三
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 世
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 代
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (28.68062pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 LEGO
+ []
+
+
+Overfull \hbox (31.25005pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 MIND-
+ []
+
+
+Overfull \hbox (42.63898pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 STORMS
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (12.67767pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 り，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 教
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 育
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 基
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 本
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (12.65881pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 は ，
+ []
+
+
+Overfull \hbox (25.13896pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 Linux
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 搭
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 載
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 イ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 テ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ジ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ェ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (11.71553pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ク，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 カ
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ラ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (12.19653pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 超
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 音
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 波
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (12.19653pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ジ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ャ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 イ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (12.19653pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 タ
+ []
+
+
+Overfull \hbox (7.47433pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 チ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 セ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 お
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 よ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 び
+ []
+
+
+Overfull \hbox (16.84439pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 2 \JY1/mc/m/n/10 種
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 類
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 モ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 タ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 標
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 準
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 含
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ま
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.65881pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 る ．
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 教
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 育
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 機
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 関
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 現
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 場
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (12.65881pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 は ，
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ラ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 イ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 レ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 サ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 や
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ボ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 通
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 じ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 問
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 題
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 解
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 決
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 型
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 授
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 業
+ []
+
+
+Overfull \hbox (26.80563pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 (PBL:
+ []
+
+
+Overfull \hbox (73.9446pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 Project/Problem
+ []
+
+
+Overfull \hbox (26.02783pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 Based
+ []
+
+
+Overfull \hbox (28.50005pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 Learn-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 ing)
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 よ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 グ
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ル ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 プ
+ []
+
+
+Overfull \hbox (18.74432pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ワ ー
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ク
+ []
+
+
+Overfull \hbox (10.9861pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 [[],
+ []
+
+
+Overfull \hbox (8.20831pt too wide) in paragraph at lines 2--14
+[]\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (8.20831pt too wide) in paragraph at lines 2--14
+[]\OT1/cmr/m/n/10 ]
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 や
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 プ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 グ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ラ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ミ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 ン
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 グ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 教
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 育
+ []
+
+
+Overfull \hbox (10.9861pt too wide) in paragraph at lines 2--14
+\OT1/cmr/m/n/10 [[]]
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 践
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 多
+ []
+
+
+Overfull \hbox (12.65881pt too wide) in paragraph at lines 2--14
+\JY1/mc/m/n/10 い ． 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 　
+       一方で，「制御工学」の教材\cite{sice2015_asai}として LEGO MINDSTORMS ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{sice2015_asai}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.15 ...で，「制御工学」の教材\cite{sice2015_asai}
+                                                  として LEGO MINDSTORMS を...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `sice2015_asai' on page  undefined on input line 15.
+
+\citation{IFAC2006_Gawthrop}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IFAC2006_Gawthrop' on page  undefined on input line 16
+.
+
+\citation{IEEE2004_Gawthrop}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IEEE2004_Gawthrop' on page  undefined on input line 16
+.
+
+\citation{IEEE2004_Heck}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IEEE2004_Heck' on page  undefined on input line 16.
+
+\citation{bumon2007_watanabe}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `bumon2007_watanabe' on page  undefined on input line 1
+6.
+
+\citation{IEEE2012_Prieto}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `IEEE2012_Prieto' on page  undefined on input line 16.
+
+\citation{book2013_lego}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `book2013_lego' on page  undefined on input line 16.
+
+\citation{rengo2014_kawata}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `rengo2014_kawata' on page  undefined on input line 16.
+
+
+\citation{sice2015_kawata}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.16 ...013_lego,rengo2014_kawata,sice2015_kawata}
+                                                  ．
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `sice2015_kawata' on page  undefined on input line 16.
+
+! Undefined control sequence.
+l.17 たとえば，文献~\Cite
+                         {IFAC2006_Gawthrop,IEEE2004_Gawthrop,IEEE2004_Heck}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 たとえば，文献~\Cite{IFAC2006_
+                                   Gawthrop,IEEE2004_Gawthrop,IEEE2004_Heck}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 17.
+! Extra }, or forgotten $.
+l.17 ..._Gawthrop,IEEE2004_Gawthrop,IEEE2004_Heck}
+                                                   では第一世代の RCX を利用...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Not two-byte family.
+l.17 ...wthrop,IEEE2004_Gawthrop,IEEE2004_Heck} で
+                                                  は第一世代の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...hrop,IEEE2004_Gawthrop,IEEE2004_Heck} では
+                                                  第一世代の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...op,IEEE2004_Gawthrop,IEEE2004_Heck} では第
+                                                  一世代の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...,IEEE2004_Gawthrop,IEEE2004_Heck} では第一
+                                                  世代の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...EEE2004_Gawthrop,IEEE2004_Heck} では第一世
+                                                  代の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...E2004_Gawthrop,IEEE2004_Heck} では第一世代
+                                                  の RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...004_Gawthrop,IEEE2004_Heck} では第一世代の
+                                                   RCX を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...throp,IEEE2004_Heck} では第一世代の RCX を
+                                                  利用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...rop,IEEE2004_Heck} では第一世代の RCX を利
+                                                  用し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...p,IEEE2004_Heck} では第一世代の RCX を利用
+                                                  し，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...IEEE2004_Heck} では第一世代の RCX を利用し
+                                                  ，
+IGNORE.
+
+! Not two-byte family.
+l.17 ...EE2004_Heck} では第一世代の RCX を利用し，
+                                                  
+IGNORE.
+
+! Not two-byte family.
+l.18 古
+       典制御によるアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典
+         制御によるアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制
+           御によるアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御
+             によるアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御に
+               よるアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によ
+                 るアーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御による
+                   アーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるア
+                     ーム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアー
+                       ム系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム
+                         系の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系
+                           の角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の
+                             角度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角
+                               度制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度
+                                 制御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制
+                                   御や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御
+                                     や，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や
+                                       ，現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や，
+                                         現代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や，現
+                                           代制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や，現代
+                                             制御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や，現代制
+                                               御によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 古典制御によるアーム系の角度制御や，現代制御
+                                                 によるクレーンの振れ止め制...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...制御によるアーム系の角度制御や，現代制御に
+                                                  よるクレーンの振れ止め制御...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...御によるアーム系の角度制御や，現代制御によ
+                                                  るクレーンの振れ止め制御を...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...によるアーム系の角度制御や，現代制御による
+                                                  クレーンの振れ止め制御を実...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...よるアーム系の角度制御や，現代制御によるク
+                                                  レーンの振れ止め制御を実現...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...るアーム系の角度制御や，現代制御によるクレ
+                                                  ーンの振れ止め制御を実現し...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...アーム系の角度制御や，現代制御によるクレー
+                                                  ンの振れ止め制御を実現して...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...ーム系の角度制御や，現代制御によるクレーン
+                                                  の振れ止め制御を実現してい...
+IGNORE.
+
+! Not two-byte family.
+l.18 ...ム系の角度制御や，現代制御によるクレーンの
+                                                  振れ止め制御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...系の角度制御や，現代制御によるクレーンの振
+                                                  れ止め制御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...の角度制御や，現代制御によるクレーンの振れ
+                                                  止め制御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...角度制御や，現代制御によるクレーンの振れ止
+                                                  め制御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...度制御や，現代制御によるクレーンの振れ止め
+                                                  制御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...制御や，現代制御によるクレーンの振れ止め制
+                                                  御を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...御や，現代制御によるクレーンの振れ止め制御
+                                                  を実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...や，現代制御によるクレーンの振れ止め制御を
+                                                  実現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...，現代制御によるクレーンの振れ止め制御を実
+                                                  現している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...現代制御によるクレーンの振れ止め制御を実現
+                                                  している．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...代制御によるクレーンの振れ止め制御を実現し
+                                                  ている．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...制御によるクレーンの振れ止め制御を実現して
+                                                  いる．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...御によるクレーンの振れ止め制御を実現してい
+                                                  る．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...によるクレーンの振れ止め制御を実現している
+                                                  ．
+IGNORE.
+
+! Not two-byte family.
+l.18 ...よるクレーンの振れ止め制御を実現している．
+                                                  
+IGNORE.
+
+! Not two-byte family.
+l.19 ま
+       た，文献~\Cite{bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+IGNORE.
+
+! Not two-byte family.
+l.19 また
+         ，文献~\Cite{bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+IGNORE.
+
+! Not two-byte family.
+l.19 また，
+           文献~\Cite{bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+IGNORE.
+
+! Not two-byte family.
+l.19 また，文
+             献~\Cite{bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+IGNORE.
+
+! Not two-byte family.
+l.19 また，文献
+               ~\Cite{bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+IGNORE.
+
+! Undefined control sequence.
+l.19 また，文献~\Cite
+                     {bumon2007_watanabe,IEEE2012_Prieto,book2013_lego} では...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Not two-byte family.
+l.19 ...watanabe,IEEE2012_Prieto,book2013_lego} で
+                                                  は第二世代の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...tanabe,IEEE2012_Prieto,book2013_lego} では
+                                                  第二世代の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...nabe,IEEE2012_Prieto,book2013_lego} では第
+                                                  二世代の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...be,IEEE2012_Prieto,book2013_lego} では第二
+                                                  世代の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...,IEEE2012_Prieto,book2013_lego} では第二世
+                                                  代の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...EEE2012_Prieto,book2013_lego} では第二世代
+                                                  の NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...E2012_Prieto,book2013_lego} では第二世代の
+                                                   NXT を利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...rieto,book2013_lego} では第二世代の NXT を
+                                                  利用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...eto,book2013_lego} では第二世代の NXT を利
+                                                  用し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...o,book2013_lego} では第二世代の NXT を利用
+                                                  し，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...book2013_lego} では第二世代の NXT を利用し
+                                                  ，
+IGNORE.
+
+! Not two-byte family.
+l.19 ...ok2013_lego} では第二世代の NXT を利用し，
+                                                  
+IGNORE.
+
+! Not two-byte family.
+l.21 車
+       輪型倒立振子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪
+         型倒立振子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型
+           倒立振子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒
+             立振子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒立
+               振子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒立振
+                 子\cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒立振子
+                   \cite{bumon2007_watanabe}や玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+\citation{bumon2007_watanabe}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.21 車輪型倒立振子\cite{bumon2007_watanabe}
+                                            や玉乗りロボット\cite{IEEE2012_P...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `bumon2007_watanabe' on page  undefined on input line 2
+1.
+
+! Not two-byte family.
+l.21 車輪型倒立振子\cite{bumon2007_watanabe}や
+                                              玉乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒立振子\cite{bumon2007_watanabe}や玉
+                                                乗りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 車輪型倒立振子\cite{bumon2007_watanabe}や玉乗
+                                                  りロボット\cite{IEEE2012_P...
+IGNORE.
+
+! Not two-byte family.
+l.21 ...倒立振子\cite{bumon2007_watanabe}や玉乗り
+                                                 ロボット\cite{IEEE2012_Prie...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 24 strings out of 493734
+ 344 string characters out of 6152926
+ 60445 words of memory out of 5000000
+ 3652 multiletter control sequences out of 15000+600000
+ 7819 words of font info for 32 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 21i,4n,24p,199b,100s stack positions out of 5000i,500n,10000p,500000b,80000s
+
+Output written on doc.dvi (1 page, 976 bytes).

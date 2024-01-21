@@ -5,9 +5,12 @@
 \usepackage{url,amsmath,amssymb,indent}
 \usepackage{mymacro}
 \usepackage{booktabs}
-\usepackage{color}
 \usepackage{fancyhdr}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
 \usepackage{url}
+
+
 \fancypagestyle{plainhead}{}
 \fancypagestyle{plainfoot}{}
 
@@ -19,7 +22,7 @@
 令和 5 年度 北九州工業高等専門学校 生産デザイン工学科 情報システムコース 卒業研究論文集
 }%偶数ページ右ヘッダー
 \fancyhead[RE]{\small%
-小倉：卒業研究論文の原稿のサンプル
+藤本：TypeScript を用いたスクレイピングとデータ整形について
 }%奇数ページ左ヘッダー
 \fancyfoot{} % フッダーの初期設定をクリア
 
@@ -41,17 +44,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\title{卒業研究論文の原稿のサンプル}
-\author{5412　小倉 太郎（指導教員：八幡 花子）}
+\title{TypeScript を用いたスクレイピングとデータ整形について}
+\author{5431　藤本 祥太（指導教員：才田 聡子）}
 \engtitle{
-Sample of Graduation Research Paper Manuscript
+Scraping and Data Formatting Using TypeScript
 }
 
 \abstract{
-    電離圏研究のために実施されているHFD観測のデータはオープンデータとして公開されており，自由な使用が認められている．現状，この観測データの利活用のためにいくつかのwebアプリケーションが開発されているが，その多くで課題点を抱えてしまっている．そのため，主な利用者である研究者たちの要望も取り入れつつ，よりよいwebアプリケーションの提案，開発を行う．本研究では，その中のwebスクレイピングを用いてデータを取得する処理および取得したデータを扱いやすくする処理に焦点を当てる．
+    電離圏研究のために実施されているHFD観測のデータはオープンデータとして公開されており，自由な使用が認められている．現状，この観測データの利活用のためにいくつかのwebアプリケーションが開発されているが，その多くで課題点を抱えてしまっている．そのため，主な利用者である研究者たちの要望も取り入れつつ，よりよいwebアプリケーションの提案，開発する．本研究では，その中のwebスクレイピングを用いてデータを取得する処理および取得したデータを扱いやすくする処理に焦点を当てる．
 }
 
-\keyword{限界感度法，PID 制御}
+\keyword{TypeScript，スクレイピング}
 
 \maketitle%
 %\setcounter{page}{5}%ページ番号の初期値

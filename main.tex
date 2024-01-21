@@ -1,73 +1,267 @@
-\documentclass[twoside]{jarticle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{はじめに}
 
-\usepackage{graduate}
-\usepackage[dvipdfmx]{graphicx}
-\usepackage{url,amsmath,amssymb,indent}
-\usepackage{mymacro}
-\usepackage{booktabs}
-\usepackage{fancyhdr}
-\usepackage[dvipdfmx]{graphicx}
-\usepackage[dvipdfmx]{color}
-\usepackage{url}
+　地震等に伴う電離圏の変動を観測するため，HF帯電波を用いたHFD観測という手法が取られている．このHFD(短波ドップラー)観測のデータは電離圏研究のためにオープンデータとして公開されており，自由な使用が認められている．\cite{hfd_report}\\
+　現状，データ活用を促進するために数件の web アプリケーションが開発されている．しかし，設計時点で複数の言語が使用されている，ページの読み込みに時間がかかるなど，その多くが開発運用の困難性やユーザーエクスペリエンス等の観点で問題を抱えている．\\
+ 例として，図1にHFDのオープンデータが公開されているwebサイトの一部を示す．\cite{hfd_link}\\
+ \begin{figure}[ht]
+   \centering
+   \includegraphics[width=80mm]{fig/websc.png}
+   \caption{オープンデータが公開されているwebサイト}
+ \end{figure}\\
+ これは，公開されているオープンデータを元にプロットされたグラフを表示しているページである．図に上部にあるタブから日付やチャンネルなどを変更し，プロットされるグラフのデータを変更することができる．しかし，観測年，月，，観測方法，チャンネルの周波数などを１つずつ変更する必要がある上，タブ自体が小さく押しづらいとかなり不便になってしまっている．また，同時に１つまでしかグラフを表示することができず日付ごとの比較などが不便になってしまっている，上部のボタンが背景と文字のコントラストが小さく視認性が悪い，文字が小さく読みづらい等，UI，UX上の観点で様々な問題を抱えている．\\
+%%\textcolor{red}{ここに問題の例を具体的に記述してください}
+また，webアプリケーションの主なユーザーとなる電離圏の研究者から，webアプリケーションの仕様についていくつかの要望が出されている．それらを一部抜粋して，以下に示す：
+\begin{itemize}
+\item 周波数固定で全ての局を見せる
+\item 局固定で全ての周波数を見せる
+\item ダイナミックスペクトルを見たい
+\item Doppler の時系列に Amplitude で色を付けたい
+\item Es などのイベントを抽出したい（機械学習）
+\item ランニングアベレージを取りたい
+\item PDF などの形に出力できると良い
+\item パンとズームができると良い
+\end{itemize}
 
+これら既存のwebアプリケーションにおける課題点の解消，及び研究者からの要望を反映したwebアプリケーションを提供するため，webアプリケーションの新規設計を行う．\\
+今回新規に開発するwebアプリケーションのシステム設計図を以下図2に示す．\\
+今回，webアプリケーションの全体設計及びサーバー・バックエンド周りを中嶋，スクレイピング及びデータ処理を藤本，UX・UI及びフロントエンドの描画処理を中村，同じくUI・UX及びグラフのプロットを木村が担当する．
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=80mm]{fig/system.png}
+    \caption{システム設計図}
+\end{figure}
 
-\fancypagestyle{plainhead}{}
-\fancypagestyle{plainfoot}{}
-
-\pagestyle{fancy}
-%\fancypagestyle{plain}{\pagestyle{fancy}}
-
-\fancyhead{} % ヘッダーの初期設定をクリア
-\fancyhead[LO]{\small%
-令和 5 年度 北九州工業高等専門学校 生産デザイン工学科 情報システムコース 卒業研究論文集
-}%偶数ページ右ヘッダー
-\fancyhead[RE]{\small%
-藤本：TypeScript を用いたスクレイピングとデータ整形について
-}%奇数ページ左ヘッダー
-\fancyfoot{} % フッダーの初期設定をクリア
-
-
-
-\setlength{\parindent}{0zw}
-
-\makeatletter
-\def\@listi{\leftmargin\leftmargini
-\parsep \z@
-\topsep 0.2\baselineskip \@plus 0.2\baselineskip \@minus 0.1\baselineskip
-\itemsep \z@ \relax}
-\let\@listI\@listi
-\makeatother
+　既存のwebアプリケーションにおける課題点を解消するため，ページレンダリング手法を考慮して開発を進めていく．本研究ではNext.jsと呼ばれるJavaScriptのフレームワークを用いて実装を行う．JavaScriptのUIライブラリの一つであるReact.jsがベースとなっており，サーバ機能も有しているため効率的なweb開発が可能である．また，サーバーサイドレンダリング(SSR)や静的サイト生成(SSG)といった機能を持つwebサイトの作成を得意とする．そのため，今回開発するwebアプリケーションの要件に合致していると判断した．\cite{next}\\
+　本開発でのシステム構成に関して，同研究室の中嶋がインクリメンタルスタティックリジェネレーション(ISR)を用いた手法と，サーバーサイドレンダリング(SSR)とスタティックジェネレーション(SG)を用いた手法について，実行にかかる時間の計測・比較を行った．その結果，ISRを用いた手法では初回実行時に約30分の待機時間が発生すること，それに対しSSRとSGを用いた手法ではデータのページに遷移する際に約1秒のスクレイピング時間を必要とすることがわかった．SSRとSGを用いた手法ではページ遷移の度に約1秒の待機時間が発生してしまうが，ISRを用いた手法の場合で初回ビルド時に発生してしまう約30分のオーバーヘッドの問題を踏まえれば許容範囲であると考えた．そのため，本開発ではSSRとSGを用いた手法でwebアプリケーション開発を行なっていく．\cite{shu_sotsuken}\\
+　本研究ではこのwebアプリケーションにおける web スクレイピングを用いてオープンデータが公開されているwebサイトからデータを取得する処理，および，取得したデータを整形してフロントエンドで扱いやすく整形する処理に焦点を当てる．また，使用する言語をwebアプリケーション開発全体で統一して管理コストの低減を図るため，webスクレイピングに関する処理はTypeScriptを用いて行う．\\
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Webスクレイピング}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
+　webスクレイピングとは，web サイトから情報を抽出するコンピュータソフトウェア技術のことを指す．HTML フォーマットからテキストを抽出してスプレッドシートや json ファイル等の構造化データへの変換を行い，web 上にあるデータを取得して扱うことを目的とする．今回のように，目的のデータがwebサイト上にオープンデータとして公開されている場合はデータ取得の手段として適している．取得したデータはそのままでは扱いにくいことがあるため，その場合は適宜扱いやすいように整形しておく必要がある．
+ \\web スクレイピングの手法としては，正規表現や DOM 解析，HTML パーサ等を用いたものがある．本研究では，ISRを用いたwebアプリケーションを設計するため，スクレイピングの処理に速度を求める必要がない．そのため，本研究では軽量でサーバへの負担が小さいcheerioをHTMLパーサとして用いる．
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{使用技術}
+　本研究で使用したNext.jsとTypeScriptのバージョンを以下表1に示す．\\
+ \begin{table}[ht]
+   \centering
+   \caption{パッケージのバージョン}
+   \begin{tabular}{lcr}
+      \hline
+		名称         & バージョン   \\
+		\hline \hline
+		Next.js    & 13.0.6  \\
+		TypeScript & 4.9.4   \\
+		
+		\hline
+   \end{tabular}
+ \end{table}\\
+ また，本研究で使用した主な技術について以下に示す．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \subsection{TypeScript}
+ TypeScriptはJavaScriptに静的な型付けやクラスベースなオブジェクト指向を加えたスーパーセットである．この場合のスーパーセットとは，あるものに対して既存の機能を全て含んだ上でより機能を拡張した，上位互換のことを指す．JavaScriptと比べ型定義を静的に行えるという特徴がある．あらかじめ関数の引数等などの型を定義しておくことでコードの可読性を向上させたり、実行時のエラーを削減したりできるという利点がある．また，本開発ではアプリケーションフレームワークにNext.jsを採用する．上記の利点に加え，webアプリケーション開発全体で使用する言語を統一することで管理コストの低減を図ることができるためTypeScriptが本研究でのデータ整形，出力処理に適していると判断し採用した．
+%%\textcolor{red}{TypeScriptが他の言語に比べてどのような点で優れているか本研究で採用する理由をもう少し詳細にかいて説得力を持たせる}
 
-\title{TypeScript を用いたスクレイピングとデータ整形について}
-\author{5431　藤本 祥太（指導教員：才田 聡子）}
-\engtitle{
-Scraping and Data Formatting Using TypeScript
-}
+\subsection{Next.js}
+　Next.jsはJavaScriptのフレームワークの１つであり，UIライブラリであるReact.jsがベースとなっている．その特徴としてページレンダリングのサポートが充実していることやサーバ機能を有しているため効率的なweb開発を行うことができることなどが挙げられる．そのため，アプリケーションの目的に応じて最適なレンダリング手法を選択することができることを強みとする．\\
+ Next.jsのレンダリングオプションには一般的なクライアントサイドレンダリング(CSR)の他に，本開発で用いるサーバーサイドレンダリング(SSR)，スタティックジェネレーション(SG)，インクリメンタル静的再生成(ISR)を含む．
 
-\abstract{
-    電離圏研究のために実施されているHFD観測のデータはオープンデータとして公開されており，自由な使用が認められている．現状，この観測データの利活用のためにいくつかのwebアプリケーションが開発されているが，その多くで課題点を抱えてしまっている．そのため，主な利用者である研究者たちの要望も取り入れつつ，よりよいwebアプリケーションの提案，開発する．本研究では，その中のwebスクレイピングを用いてデータを取得する処理および取得したデータを扱いやすくする処理に焦点を当てる．
-}
+\subsection{Superagent}
 
-\keyword{TypeScript，スクレイピング}
+　HTMLリクエストを送信することのできるモジュール．GET通信及びPOST通信を行うことができる．非同期処理に適しており，同期処理に不向きな代わりに動作が早く，負荷が軽いという特徴がある，そのため，本研究でのスクレイピング処理に適していると判断し採用した．本研究ではHFD観測データが公開されているwebページからHTMLレスポンスとしてテキストデータを取得する際に用いる．\cite{superagent}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Cheerio}
 
-\maketitle%
-%\setcounter{page}{5}%ページ番号の初期値
-%\thispagestyle{empty}
-% \pagestyle{empty}
+　HTMLパーサにjQueryのサブセットを実装したもの．HTMLドキュメントのタグやクラスを指定して，目的のテキストを抜き出すことができる．利点として，jQueryの関数を用いてスクレイピングの処理を行うことができる．jQueryライクに記述することがでる，動作が早く，負荷が軽い，ほぼすべてのHTMLドキュメントをパースできるという点が挙げられる．そのため，本研究では本研究ではHTMLレスポンスからテキストデータだけを抜き出す際に用いる．\cite{cheerio}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{実装}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{目標}
+ 本開発では，Next.jsを用いて開発運用及びユーザーエクスペリエンスの観点で従来のものよりも優れており，なおかつ主なユーザーである研究者の要望を取り入れたWebアプリケーションを新規に作成することを目標とする．本研究ではその中の，webスクレイピングを用いてオープンデータが公開されているサイトからデータを取得する処理及び，それをフロントエンドで扱いやすいように整形する処理を実装することまでを目標とする．\\
+ 本研究ではスクレイピングおよび，データ処理を行う関数を実装し，フロントエンドから求められているデータ様式の要件を以下に示す：
+ \begin{itemize}
+\item json形式にまとめられている
+\item "hour"，"minute"，"second"という3つのプロパティを含んでいる"time"プロパティを持つ
+\item チャンネルの周波数ごとに"freq"と"amp"がまとめられたプロパティ，"channel"を持つ
+\end{itemize}
 
-\setlength{\abovedisplayskip}{3.5pt} % 上部のマージン
-\setlength{\belowdisplayskip}{4.5pt} % 下部のマージン
-\setlength{\jot}{0pt} % 
+\subsection{今回のデータ整形処理について}
+　このオープンデータは観測地点によってチャンネルの数および周波数が異なり，それに応じて処理の内容と出力するjsonファイルのプロパティ名を変更する必要がある．\\
+ データ整形処理の実装当初，この観測地点ごとのチャンネルの違いについてあらかじめjsonの型定義に全ての周波数分のプロパティを用意しておき，必要に応じて利用するという方法を試みた．しかし，その方法では出力したデータファイルに無駄が多く，データファイルを閲覧する際の視認性が悪く，データファイルを保存する際に容量を圧迫してしまうため好ましくない．\\
+ そのため，元データのラベル部分をあらかじめデータ整形用の配列とは別に保存しておき，json生成の際に利用することで観測地点ごとにチャンネルの数と周波数ごとに適切な処理を行う方法をとった．\\
+ また，当初はjsonの構成でデータ部分を"channel"プロパティにまとめずそのまま周波数ごとに記述していた．しかし，観測地点ごとにチャンネルの数および周波数が違う今回の場合ではその方法ではフロントエンドで扱いづらく，また可読性等の観点で好ましいデータ様式ではないため上記表2のように"time"プロパティと"channel"プロパティを分けることとした．\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{スクレイピング処理}
+%%\textcolor{red}{どうやって発火するのか書く}
+　本開発ではSSRとSGを併用した手法で開発を行っていく．データが公開されているwebサイトの検索ページに存在するパスを静的に生成し，各ページでリクエストが発生した際に動的に波形データを返すという処理を行う．今回実装したスクレイピング処理およびデータ整形処理を行う関数は，各ページでリクエストが発生した際にサーバーサイドで実行されフロントエンドにスクレイピング・整形後のデータを渡すという処理で使用する．\\
+　SuperagentのGET関数を用いて，HFドップラーのデータが公開されているwebサイト\cite{hfd_link}にHTMLリクエストを送り，webサイトのHTMLリソースを取得する．例として，2020/11/20Sarobetsuのデータを示す．図3はSuperagentを用いて取得したwebサイトのHTMLリソースの一部である．\\
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=80mm]{fig/htmlRes.png}
+  \caption{サイトのHTMLリソース}
+\end{figure}\\
+このHTMLリソースから，cheerioを用いて目的のテキストデータのみを取り出す．今回はbodyすべてを取り出して，そのテキストデータをフロントエンドから求められているデータ様式の要件に沿って整形していく．\\
+図4にHTMLリソースから取り出したデータの一部を示す．
+\begin{figure}[ht]
+   \centering
+   \includegraphics[width=80mm]{fig/textData.png}
+   \caption{抜き出したテキストデータ}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{データ整形処理}
+ \subsubsection{テキストデータを改行ごとに区切る}
+　TypeScriptのsplit関数を用いてテキストデータを改行ごとに区切り，splitLineDataという配列に格納する．split関数はテキストに対して使用することができ，引数に渡した文字ごとにテキストを区切って配列にすることができる．今回は"\textbackslash n"を引数に渡すことで，改行ごとにテキストデータを区切り配列に格納する．\\
+ 図5にsplitLineDataの一部を示す．\\
+ \begin{figure}[ht]
+   \centering
+   \label{fig:my_label}
+   \includegraphics[width=80mm]{fig/splitLineData.png}
+    \caption{改行ごとに区切ったデータ}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \subsubsection{データのラベルを取り出し，テキストデータのうちラベルにあたる最初の4行を削除する}
+　TypeScriptのslice関数を用いて，ラベルが記述されているsplitLineDataの2行目を取り出してlabelItemという配列に格納する．slice関数は元の配列に影響を及ぼさないため，このような場合には適している．\cite{mdn_slice}このデータは観測地点によってチャンネル数が異なっているため，チャンネル数に応じて処理を変える必要がある．それぞれテキストデータの2行1文字目にチャンネル数が記述されているため，labelItemの0番目の要素を数値に変換してnumber型の定数Nに格納する．
+ ラベルから必要なデータを抜き出したため，必要の無くなったテキストデータのラベル4行をsplice関数を用いて削除し，spliceData関数に格納する．\\
+ 図6にspliceDataの一部を示す．\\
+ \begin{figure}[ht]
+   \centering
+   \includegraphics[width=80mm]{fig/spliceData.png}
+   \caption{ラベル部分を削除したデータ}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \subsubsection{データを空白ごとに区切り，配列に格納する}
+　TypeScriptのmap関数を用いて，spliceDataの要素ひとつひとつに対してそれぞれsplit関数で処理を行う．splitData関数の要素，つまり改行で区切ったテキストデータは空白で区切って記述されている．そのため，split関数を用いて空白ごとに区切り，二重配列splitSpaceDataに格納する．このデータは空白1つで区切られている場合と空白２つ場合があり，そのまま格納してしまうと空白の要素が生まれてしまう．そのため，filter関数を用いて空白のみの要素を取り除く．filter関数は配列に格納する際に用い，指定された要件に合った要素以外を排除することができる．今回は，filter関数に空白(" ")を渡し，さらに要素の長さが1に満たない要素を排除することで，空白のみの要素を取り除いている．
+ 図7にsplitSpaceDataの一部を示す．
+ \begin{figure}[ht]
+   \centering
+   \includegraphics[width=70mm]{fig/splitSpaceData.png}
+   \caption{空白ごとに区切ったデータ}
+ \end{figure}
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \subsubsection{データを数値に変換する}
+ 　データをフロントエンドでグラフのプロット等に使用できるようにするために，データの型を数値型にしておく必要がある．splitSpaceData配列に格納されている要素全てをstring型からnumber型に変換する．splitSpaceData配列は二重配列であるため，二重にmap関数をかけることで要素全てをnumber型に変換し，NumberData配列に格納する．TypeScriptでは\\Number(データ)と返すことでデータをnumber型に変換することができる．
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ \subsubsection{データをjsonファイルに出力}
+　NumberDataを，フロントエンドから求められているデータ様式の要件に沿うようにjsonファイルに出力する．今回は，Number配列をforEach関数を用いて処理する．forEach関数はmap関数と同じコールバック関数で，jsonを扱うこともできる．forEach関数は内部にvalueとindexという変数を持つことができ，valueが配列やjsonの要素のうち今扱っているものを，indexが今扱っている要素が配列やjsonのうち何番目かをそれぞれ表している．今回の場合，valueはNumber配列の中の配列になるため，テキストデータの改行1つ分を空白で区切った配列となる．
+　Number配列は，二重配列の中の要素が，0番目の要素から順に"hour"，"minute"，"second"，"freq"，"amp"，"freq"，"amp"．．．となる配列になっている．観測地点ごとにチャンネルの数および周波数が異なるため，"freq"と"amp"の組み合わせがいくつあるかはデータによって異なる．そのため，value[0]〜value[2]をそれぞれjsonファイルのtimeプロパティの"hour"，"minute"，"second"に格納する．value[3]からは，"freq"と"amp"の２つごとにlabelItemの偶数番目に格納されているチャンネルの情報をもとにjsonに格納する．\\
+　全ての要素に対して上記の処理を行ったのち，jsonをファイルに出力する．\\
+生成したjsonの一部を図8に示す．\\
+%%\textcolor{red}{jsonデータって初期状態からフロントエンドからリクエスト、スクレイピング、ユーザに向けて描画するのに大体どのくらい時間かかるか分かりそうですか？分かりそうだったらこのシステムでデータを読み込む時の速さを上記のように要素ごとに分けてモニタリングできると、改善したところもわかりやすくなっていいかもしれません（なんといってもページが埋まる…）}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=70mm]{fig/jsonData.png}
+  \caption{生成したjson}
+\end{figure}
+また，今回のシステム設計において観測データの取得及びjsonデータの出力にかかる時間を計測したものを表2に示す．\cite{shu_sotsuken}\\
 
-\thispagestyle{fancy}
+\begin{table}[ht]
+	\caption{スクレイピング及びデータ整形に時間}
+	\centering
+	\begin{tabular}{lcr}
+		\hline
+		回数  & 実行時間(ms) \\
+		\hline \hline
+		1回目 & 1435     \\
+		2回目 & 1166     \\
+		3回目 & 1054     \\
+		4回目 & 997      \\
+		\hline
+		平均  & 1163
+	\end{tabular}
+\end{table}
+この表からわかる通り，実行にかかる時間はおよそ1秒となっており，webアプリケーションのユーザ体験の観点から許容範囲内であると言える．\\
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{doc.tex}
-\end{document}
+ %%\textcolor{red}{ここら辺が藤本君が研究で工夫した点になると思うので、技術的な壁があったのか、あったならどうやって対応したのか、壁がなかったらこの研究の新規性が整形処理のどのあたりにあるのか書く}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\subsection{プロットしたグラフ}
+　実際にフロントエンドでプロットしたグラフを図9に示す．縦軸がfreq，横軸が時間を表している．データの通りにプロットができており，データ整形とデータの受け渡しが上手くいっていることがわかる．\\
+ \begin{figure}[ht]
+   \centering
+   \includegraphics[width=80mm]{fig/graph.png}
+      \caption{プロットしたグラフ}
+ \end{figure}\\
+
+\textcolor{red}{また，ユーザーからの要望に対する達成度を以下に示す．太字の項目が達成できた項目である．いくつか達成・改善できている項目があり，その他にもUI・UX等での改善点もあるため，このwebアプリケーションはユーザー体験の向上に貢献したと言える．}
+\begin{itemize}
+\item 周波数固定で全ての局を見せる
+\item 局固定で全ての周波数を見せる
+\item ダイナミックスペクトルを見たい
+\item Doppler の時系列に Amplitude で色を付けたい
+\item Es などのイベントを抽出したい（機械学習）
+\item ランニングアベレージを取りたい
+\item PDF などの形に出力できると良い
+\item パンとズームができると良い
+\end{itemize}
+%%\textcolor{red}{たくさん図を貼った方がいいですね}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{おわりに}
+　今回は電離圏の研究を目的とするHDFの観測データの利活用を促進するための新規webアプリケーション作成に際し，オープンデータからスクレイピングを用いて観測データを取得，webアプリケーションのフロントエンドで扱いやすいよう整形するという処理の検討・実装を行った．データの観測地点ごとのチャンネル情報の差異や，フロントエンドで扱う際の都合を考慮して適切なスクレイピング・データ整形処理を行えたのではないかと考える．\\
+ 必要とするデータがwebサイト上にオープンデータとして公開されている場合は，データを取得する手段としてwebスクレイピングが有力な手法となる．また，webアプリケーション開発等でデータを扱う際はあらかじめ適切な形に整形しておくことが重要である．\\
+　
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\small
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0pt}
+\smallskip
+
+\bibitem{hfd_report}
+吉川晃平，HFドップラーにより観測された地震に伴う電離圏変動の中性待機波導数値シミュレーションによる定量的評価，電気学会論文誌A Vol.136 No.5 pp.259~264
+
+\bibitem{hfd_link}
+HF Doppler Sounding Experiment in Japan - HFDOPE
+\url{http://gwave.cei.uec.ac.jp/~hfd/pre.html}　2024/1/13
+
+\bibitem{next}
+Next.js by Vercel - The React Framework
+\url{https://nextjs.org/}　2024/1/13
+
+\bibitem{shu_sotsuken}
+中嶋柊，HFドップラー観測データの利活用を目的とするWebアプリケーションのレンダリング設計，令和 5 年度 北九州工業高等専門学校 生産デザイン工学科 情報システムコース 卒業研究論文集
+
+\bibitem{superagent}
+Superagent-npm 
+\url{https://www.npmjs.com/package/superagent}  2023/01/25
+
+\bibitem{cheerio}
+cheeriojs/cheerio: Fast, flexible, and lean implemenhttps://developer.mozilla.org/ja/docs/Web/JavaScript/
+Reference/GlobalObjects/Array/mapt　ation of core jQuery designed specifically for the server. 
+\url{https://github.com/cheeriojs/cheerio}  2023/01/25 
+
+\bibitem{mdn_splice}
+Array.prototype.splice() - JavaScript | MDN
+\url{https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/splice}　2024/1/13
+
+\bibitem{mdn_slice}
+Array.prototype.slice() - JavaScript | MDN
+\url{https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/slice}　2024/1/13
+
+\bibitem{mdn_map}
+Array.prototype.map() - JavaScript | MDN
+\url{https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map}
+2024/1/13
+
+\bibitem{mdn_filter}
+Array.prototype.filter() - JavaScript | MDN
+\url{https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/filter}　2024/1/13
+
+\bibitem{mdn_horEach}
+Array.prototype.forEach() - JavaScript | MDN
+\url{https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach}　2024/1/13
+
+\end{thebibliography}
+\normalsize
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
